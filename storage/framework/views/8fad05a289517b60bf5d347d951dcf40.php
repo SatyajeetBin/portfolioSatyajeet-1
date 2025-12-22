@@ -1,4 +1,5 @@
-<?php $__env->startSection('title', 'User Listing'); ?>
+
+<?php $__env->startSection('title', 'Role Listing'); ?>
 <?php $__env->startSection('styles'); ?>
     <style>
         #overlay {
@@ -65,17 +66,17 @@
         <div class="card-header d-flex align-items-center justify-content-between py-2">
             
         <?php
-            $chk = \App\Models\Permission::checkCRUDPermissionToUser('User', 'create');
+            $chk = \App\Models\Permission::checkCRUDPermissionToUser('Role', 'create');
             echo '<div class="card-header d-flex align-items-center justify-content-between ' .
                 ($chk == true ? ' py-2' : ' py-3') .
                 '">';
-            echo '<h5 class="card-title m-0 me-2 text-secondary">User</h5>';
+            echo '<h5 class="card-title m-0 me-2 text-secondary">Roles</h5>';
             if ($chk) {
             }
             echo '</div>';
             echo '<a href="' .
-                route('user.create') .
-                '" class="btn btn-primary waves-effect waves-light addButton">Add User</a>';
+                route('role.create') .
+                '" class="btn btn-primary waves-effect waves-light addButton">Add Role</a>';
         ?>
         </div>
         <?php if(session('message')): ?>
@@ -86,7 +87,7 @@
         <?php endif; ?>
         <div class="card-body">
             <div class="card-datatable table-responsive pt-0">
-                <table class="datatables-basic table table-striped" id="user_table">
+                <table class="datatables-basic table table-striped" id="role_table">
                     <div id="overlay"></div>
                     <thead>
                         <tr>
@@ -94,8 +95,7 @@
                             <th>Action</th>
                             <th>Sr. No.</th>
                             <th>Name</th>
-                            <th>Role</th>
-                            <th>Contact</th>
+                            
                         </tr>
                     </thead>
                 </table>
@@ -112,14 +112,14 @@
             $("#overlay").show();
 
             function fill_datatable(name = '', id = '', created_at = '') {
-                var dataTable = $('#user_table').DataTable({
+                var dataTable = $('#role_table').DataTable({
                     searching: true,
                     processing: true,
                     serverSide: true,
                     scrollX: true,
                     lengthMenu: [10, 25, 50, 100, 1000, 10000],
                     ajax: {
-                        url: "<?php echo e(route('user.index')); ?>",
+                        url: "<?php echo e(route('role.index')); ?>",
                     },
                     columns: [{
                             data: 'id'
@@ -137,14 +137,6 @@
                         {
                             data: 'name',
                             name: 'name'
-                        },
-                        {
-                            data: 'role_id',
-                            name: 'role_id'
-                        },
-                        {
-                            data: 'contact',
-                            name: 'contact'
                         },
                         /* {
                             data: 'created_at',
@@ -249,7 +241,7 @@
 
                 if (result.value) {
                     $.ajax({
-                        url: 'user/delete/' + id,
+                        url: 'role/delete/' + id,
                         type: "get"
                     }).done(function(data) {
                         if (!data.status) {
@@ -297,4 +289,4 @@
     </script>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\foodcalorie\resources\views/user/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\Users\binstellar\OneDrive\Desktop\portfolioSatyajeet\resources\views/role/index.blade.php ENDPATH**/ ?>

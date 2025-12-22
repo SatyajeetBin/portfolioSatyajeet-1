@@ -147,4 +147,4 @@
 </body>
 
 </html>
-<?php /**PATH C:\Users\binstellar\OneDrive\Desktop\protfolio\resources\views/layouts/guest.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\Users\binstellar\OneDrive\Desktop\portfolioSatyajeet\resources\views/layouts/guest.blade.php ENDPATH**/ ?>

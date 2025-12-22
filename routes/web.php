@@ -7,8 +7,18 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserPermissionController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/admin', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::get('/', function () {
+    return view('layouts.webpage');
+})->name('home');
+
+Route::get('/home', function () {
+    return view('layouts.home');
+});
+
 Route::middleware('auth')->group(function () {
 
     Route::prefix('role')->group(function () {

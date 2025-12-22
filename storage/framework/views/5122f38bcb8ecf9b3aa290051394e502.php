@@ -60,20 +60,20 @@
 
     <style>
         /* ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px #A27835;
+            -webkit-box-shadow: inset 0 0 6px #f13737;
             border-radius: 10px;
-            background-color: #A27835;
+            background-color: #f13737;
         }
 
         ::-webkit-scrollbar {
             width: 8px;
             padding-top: 10px;
-            background-color: #A27835;
+            background-color: #f13737;
         }
 
         ::-webkit-scrollbar-thumb {
             border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px #A27835;
+            -webkit-box-shadow: inset 0 0 6px #f13737;
             background-color: #f5f5f5;
             height: 20px;
         } */
@@ -107,7 +107,7 @@
         }
 
         div.dataTables_processing>div:last-child>div {
-            background: #A27835;
+            background: #f13737;
         }
 
         .layout-navbar-fixed:not(.layout-menu-collapsed) .layout-content-navbar:not(.layout-without-menu) .layout-navbar,
@@ -148,7 +148,7 @@
                 position: absolute;
                 right: 5px;
                 top: 5px;
-                background-color: #A27835;
+                background-color: #f13737;
                 color: #fff;
                 border-radius: 5px;
             }

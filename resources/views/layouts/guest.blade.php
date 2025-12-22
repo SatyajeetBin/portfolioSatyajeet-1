@@ -56,13 +56,13 @@
 
     <style>
         body {
-            background: #FFFCF3;
+            background: #FFFFFF;
         }
 
         .btn-primary {
             color: #FFFFFF;
-            background-color: #A27835;
-            border-color: #A27835;
+            background-color: #f13737;
+            border-color: #f13737;
             box-shadow: 0px 4px 8px -4px rgba(76, 78, 100, 0.42);
             padding: 8px;
             border-radius: 10px;
@@ -79,17 +79,17 @@
         }
 
         .form-check-input:checked {
-            background-color: #A27835 !important;
-            border-color: #A27835 !important;
+            background-color: #f13737 !important;
+            border-color: #f13737 !important;
         }
 
         .form-check-input {
-            border-color: #A27835 !important;
+            border-color: #f13737 !important;
         }
 
         a,
         a:hover {
-            color: #A27835;
+            color: #f13737;
         }
 
         .red-text {

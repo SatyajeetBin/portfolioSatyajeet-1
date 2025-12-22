@@ -25,7 +25,7 @@
         }
 
         .addButton:hover {
-            color: #A27835 !important;
+            color: #f13737 !important;
             background-color: #fff !important;
         }
 
@@ -37,11 +37,11 @@
         }
 
         button.nav-link.waves-effect.waves-light {
-            border: 1px solid #A27835 !important;
+            border: 1px solid #f13737 !important;
         }
 
         .nav-link {
-            color: #A27835 !important;
+            color: #f13737 !important;
         }
 
         button.active {

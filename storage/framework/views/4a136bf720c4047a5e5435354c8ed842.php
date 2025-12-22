@@ -14,3 +14,4 @@
         </div>
     </div>
 </footer>
+<?php /**PATH C:\Users\binstellar\OneDrive\Desktop\portfolioSatyajeet\resources\views/layouts/footer.blade.php ENDPATH**/ ?>

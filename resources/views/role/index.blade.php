@@ -27,7 +27,7 @@
         }
 
         .addButton:hover {
-            color: #A27835 !important;
+            color: #f13737 !important;
             background-color: #fff !important;
         }
 
