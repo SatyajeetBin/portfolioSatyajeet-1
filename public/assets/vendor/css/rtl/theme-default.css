@@ -313,8 +313,8 @@ button.list-group-item-primary.active {
 
 .btn-primary:hover {
     color: #fff !important;
-    background-color: #B38C48 !important;
-    /* border-color: #B38C48 !important; */
+    background-color: #ff0429!important;
+    /* border-color: #ff0429!important; */
 }
 
 .btn-check:focus+.btn-primary,
@@ -333,8 +333,8 @@ button.list-group-item-primary.active {
 .btn-primary.show.dropdown-toggle,
 .show>.btn-primary.dropdown-toggle {
     color: #fff !important;
-    background-color: #B38C48 !important;
-    border-color: #B38C48 !important;
+    background-color: #ff0429!important;
+    border-color: #ff0429!important;
 }
 
 .btn-check:checked+.btn-primary:focus,
